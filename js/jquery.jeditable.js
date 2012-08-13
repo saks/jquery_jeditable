@@ -310,7 +310,7 @@ jQuery.editable = {
                 return(input);
             },
             content : function(string, settings, original) {
-                jQuery(':input:first', this).val(string);
+                jQuery(':input:first', this).val($.trim(string));
             },
             buttons : function(settings, original) {
                 if (settings.submit) {
